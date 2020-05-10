@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 # Author:Bruce Zhang
+"""
+双端队列
+"""
 
 
 class Deque:

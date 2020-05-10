@@ -31,7 +31,7 @@ class UnorderedList:
                 current = current.getNext()
         return found
 
-    def remove(self,item):
+    def remove(self, item):
         current = self.head
         previous = None
         found = False
@@ -41,4 +41,12 @@ class UnorderedList:
             else:
                 previous = current
                 current = current.getNext()
+        if previous is None:
+            self.head = current.getNext()
+        else:
+            previous.setNext(current.getNext())
+
+    # 是否空表
+    def isEmpty(self):
+        return self.head is None
 
