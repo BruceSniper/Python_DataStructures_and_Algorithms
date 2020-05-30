@@ -16,9 +16,7 @@ def bubbleSort(alist):
                 在python中，可以直接交换：
                 alist[i], alist[i+1] = alist[i+1], alist[i]
                 """
-                temp = alist[i]
-                alist[i] = alist[i + 1]
-                alist[i + 1] = temp
+                alist[i], alist[i + 1] = alist[i + 1], alist[i]
 
 
 alist = [54, 26, 93, 17, 77, 31, 44, 31, 44, 55, 20]

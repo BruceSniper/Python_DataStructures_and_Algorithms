@@ -14,10 +14,8 @@ def shortBubbleSort(alist):
         for i in range(passnum):
             if alist[i] > alist[i+1]:
                 exchanges = True
-                temp = alist[i]
-                alist[i] = alist[i + 1]
-                alist[i + 1] = temp
-        passnum = passnum - 1
+                alist[i], alist[i + 1] = alist[i + 1], alist[i]
+        passnum -= 1
 
 
 alist = [20, 30, 40, 90, 50, 60, 70, 80, 44, 100, 110]
