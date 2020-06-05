@@ -37,7 +37,7 @@ class BinaryTree:
     def setRootVal(self, obj):
         self.key = obj
 
-    def getRoot(self):
+    def getRootVal(self):
         return self.key
 
 
